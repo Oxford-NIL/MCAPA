@@ -1,3 +1,5 @@
+%this is the code for an early beta version
+%the code for the latest version was lost due to a system failure :(
 classdef BETA < matlab.apps.AppBase
 
     % Properties that correspond to app components
