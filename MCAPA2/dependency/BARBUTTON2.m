@@ -203,7 +203,7 @@ if app.JointstoplotDropDown_3.Value=="Shoulder_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SZAngles(:,i), SZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SZAngles(:,i), SZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -218,7 +218,7 @@ if app.JointstoplotDropDown_3.Value=="Shoulder_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SXAngles(:,i), SXErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SXAngles(:,i), SXErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -233,7 +233,7 @@ if app.JointstoplotDropDown_3.Value=="Shoulder_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SYAngles(:,i), SYErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SYAngles(:,i), SYErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -249,7 +249,7 @@ elseif app.JointstoplotDropDown_3.Value == "Shoulder_flexion/extension(z)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SZAngles(:,i), SZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SZAngles(:,i), SZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -265,7 +265,7 @@ elseif app.JointstoplotDropDown_3.Value == "Shoulder_abduction/adduction(x)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SXAngles(:,i), SXErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SXAngles(:,i), SXErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -281,7 +281,7 @@ elseif app.JointstoplotDropDown_3.Value == "Shoulder_internal/external(y)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, SYAngles(:,i), SYErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, SYAngles(:,i), SYErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -298,7 +298,7 @@ elseif app.JointstoplotDropDown_3.Value == "Elbow_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, EZAngles(:,i), EZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, EZAngles(:,i), EZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -313,7 +313,7 @@ elseif app.JointstoplotDropDown_3.Value == "Elbow_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, EYAngles(:,i), EYErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, EYAngles(:,i), EYErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -329,7 +329,7 @@ elseif app.JointstoplotDropDown_3.Value == "Elbow_flexion/extension(z)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, EZAngles(:,i), EZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, EZAngles(:,i), EZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -345,7 +345,7 @@ elseif app.JointstoplotDropDown_3.Value == "Elbow_pronation/supination(y)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, EYAngles(:,i), EYErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, EYAngles(:,i), EYErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -362,7 +362,7 @@ elseif app.JointstoplotDropDown_3.Value == "Wrist_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, WZAngles(:,i), WZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, WZAngles(:,i), WZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -377,7 +377,7 @@ elseif app.JointstoplotDropDown_3.Value == "Wrist_all"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, WXAngles(:,i), WXErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, WXAngles(:,i), WXErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -393,7 +393,7 @@ elseif app.JointstoplotDropDown_3.Value == "Wrist_flexion/extension(z)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, WZAngles(:,i), WZErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, WZAngles(:,i), WZErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
@@ -409,7 +409,7 @@ elseif app.JointstoplotDropDown_3.Value == "Wrist_radial/ulnar deviation(x)"
     groupwidth = min(0.8, nbars/(nbars + 1.5));
     for i = 1:nbars
         x = (1:ngroups) - groupwidth/2 + (2*i-1) * groupwidth / (2*nbars);
-        errorbar(x, WXAngles(:,i), WXErrors(:,i), '.',HandleVisibility,'off');
+        errorbar(x, WXAngles(:,i), WXErrors(:,i), '.','HandleVisibility','off');
     end
     xticks([1,2,3])
     xticklabels(["Max","Min","Range"])
