@@ -3,6 +3,7 @@ grid on
 grid minor
 if size(data,1)>1
     if kstest(data(:,20))==1
+        IQR=iqr(data,1);
         Median=median(data,1);
         UL=quantile(data,[0.75],1)
         LL=quantile(data,[0.25],1)
