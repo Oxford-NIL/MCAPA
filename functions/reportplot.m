@@ -5,8 +5,8 @@ if size(data,1)>1
     if kstest(data(:,20))==1
         IQR=iqr(data,1);
         Median=median(data,1);
-        UL=Median+IQR;
-        LL=Median-IQR;
+        UL=quantile(data,[0.75],1)
+        LL=quantile(data,[0.25],1)
         hold on
         patch([x,fliplr(x)],[UL,fliplr(LL)],color,'edgecolor',color,'facealpha',.05,'edgealpha',.4)
         plot(x,Median,'color',color)
